@@ -29,29 +29,33 @@ class MainActivity : AppCompatActivity() {
             override fun onResponse(call: Call, response: Response) {
                 val responseRawString = response.body!!.string()
                 val jsonObject = JSONObject(responseRawString)
-                //coord
-                val coord = jsonObject.getJSONObject("coord")
-                val lon = coord.getDouble("lon")
-                val lat = coord.getDouble("lat")
-                //weather
-                val weather = jsonObject.getJSONArray("weather")
-                val weather1 = weather.getJSONObject(0)
-                val description = weather1.getString("description")
-                //main
-                val main = jsonObject.getJSONObject("main")
-                val temp = main.getDouble("temp")
-                val feelsLike = main.getDouble("feels_like")
-                val tempMin = main.getDouble("temp_min")
-                val tempMax = main.getDouble("temp_max")
-                val pressure = main.getInt("pressure")
-                val humidity = main.getInt("humidity")
+                getData(jsonObject)
 
-                val icon = weather1.getString("icon")
-                val iconPatternUrl = "https://openweathermap.org/img/wn/$icon@2x.png"
-                runOnUiThread{
-                    Glide.with(this@MainActivity).load(iconPatternUrl).into(binding.humidityIcon)
-                }
             }
         })
+    }
+    fun getData(jsonObject:JSONObject){
+        //coord
+        val coord = jsonObject.getJSONObject("coord")
+        val lon = coord.getDouble("lon")
+        val lat = coord.getDouble("lat")
+        //weather
+        val weather = jsonObject.getJSONArray("weather")
+        val weather1 = weather.getJSONObject(0)
+        val description = weather1.getString("description")
+        //main
+        val main = jsonObject.getJSONObject("main")
+        val temp = main.getDouble("temp")
+        val feelsLike = main.getDouble("feels_like")
+        val tempMin = main.getDouble("temp_min")
+        val tempMax = main.getDouble("temp_max")
+        val pressure = main.getInt("pressure")
+        val humidity = main.getInt("humidity")
+
+        val icon = weather1.getString("icon")
+        val iconPatternUrl = "https://openweathermap.org/img/wn/$icon@2x.png"
+        runOnUiThread{
+            Glide.with(this@MainActivity).load(iconPatternUrl).into(binding.humidityIcon)
+        }
     }
 }
