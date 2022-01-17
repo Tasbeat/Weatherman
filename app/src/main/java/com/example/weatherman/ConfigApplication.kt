@@ -10,9 +10,7 @@ import io.github.inflationx.calligraphy3.CalligraphyInterceptor
 import io.github.inflationx.viewpump.ViewPump
 
 
-
-
-class ConfigApplication() : Application() {
+class ConfigApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         ViewPump.init(

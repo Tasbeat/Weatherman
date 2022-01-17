@@ -1,4 +1,23 @@
 <resources>
     <string name="app_name">Weatherman</string>
     <string name="splash_text">Weatherman</string>
+    <string name="humidityString">رطوبت</string>
+    <string name="feelsLikeTitleString">دمای احساس شده</string>
+    <string name="humidityTitleText">رطوبت</string>
+    <string name="feelsLikeString">دماس احساس شده</string>
+    <string name="vazeshBaadString">وزش باد</string>
+    <string name="vazeshBaadTitleString">وزش باد</string>
+    <string name="meghdareBaareshTitleString">مقدار بارش</string>
+    <string name="meghdareBaareshString">مقدار بارش</string>
+    <string name="windSpeedAndDirectTitleString">سرعت و جهت باد</string>
+    <string name="pressureTitleString">فشار</string>
+    <string name="sunriseTitleString">طلوع</string>
+    <string name="sunsetTitleString">غروب</string>
+    <string name="windSpeedAndDirectString">سرعت و جهت باد</string>
+    <string name="pressureString">فشار</string>
+    <string name="sunriseString">طلوع</string>
+    <string name="sunsetString">غروب</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
