@@ -3,9 +3,11 @@
     <item
         android:id="@+id/page_1"
         android:enabled="true"
-        android:title="android"/>
+        android:icon="@drawable/ic_rain"
+        android:title="@string/weatherPage"/>
     <item
         android:id="@+id/page_2"
         android:enabled="true"
-        android:title="ios"/>
+        android:icon="@drawable/ic_simple_music"
+        android:title="@string/music_search_page"/>
 </menu>

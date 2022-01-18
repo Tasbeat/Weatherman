@@ -1,5 +1,6 @@
 package com.example.weatherman
 
+import android.content.ClipData
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -27,6 +28,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(LayoutInflater.from(this))
         setContentView(binding.root)
+        var badge = binding.bottomNavigation.getOrCreateBadge(R.id.page_1)
+        badge.isVisible = true
+        badge.number = 99
 
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when(item.itemId) {
@@ -41,7 +45,5 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         }
-
     }
-
 }
