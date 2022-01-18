@@ -78,7 +78,7 @@
                 android:id="@+id/linearLayout2"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:layout_marginTop="450dp"
+                android:layout_marginTop="380dp"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -523,6 +523,7 @@
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent">
 
                 <TextView
@@ -558,9 +559,11 @@
                 <TextView
                     android:id="@+id/temprautureTitle"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
+                    android:gravity="center"
                     android:text="@string/feelsLikeTitleString"
                     android:textColor="#000000" />
             </LinearLayout>

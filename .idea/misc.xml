@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ASLEFOOLAD/Desktop/Weatherman-master/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/ASLEFOOLAD/Desktop/Weatherman-master/app/src/main/res/layout/fragment_weather.xml" value="0.33" />
+        <entry key="..\:/Users/ASLEFOOLAD/Desktop/Weatherman-master/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Ali Alirahimi/AndroidStudioProjects/Weatherman/app/src/main/res/drawable/card_view_background.xml" value="0.2703125" />
         <entry key="..\:/Users/Ali Alirahimi/AndroidStudioProjects/Weatherman/app/src/main/res/drawable/ic_gauge_pressure.xml" value="0.2703125" />
         <entry key="..\:/Users/Ali Alirahimi/AndroidStudioProjects/Weatherman/app/src/main/res/layout/activity_main.xml" value="0.4005212858384014" />

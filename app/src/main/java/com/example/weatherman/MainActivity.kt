@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.example.weatherman.databinding.ActivityMainBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import io.github.inflationx.viewpump.ViewPumpContextWrapper
 import okhttp3.*
 import org.json.JSONObject
@@ -27,6 +28,19 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(LayoutInflater.from(this))
         setContentView(binding.root)
 
+        BottomNavigationView.OnNavigationItemSelectedListener { item ->
+            when(item.itemId) {
+                R.id.item1 -> {
+                    // Respond to navigation item 1 click
+                    true
+                }
+                R.id.item2 -> {
+                    // Respond to navigation item 2 click
+                    true
+                }
+                else -> false
+            }
+        }
 
     }
 
