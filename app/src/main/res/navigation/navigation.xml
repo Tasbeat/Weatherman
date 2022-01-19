@@ -10,4 +10,9 @@
         android:name="com.example.weatherman.WeatherFragment"
         android:label="fragment_weather"
         tools:layout="@layout/fragment_weather" />
+    <fragment
+        android:id="@+id/musicSearchFragment"
+        android:name="com.example.weatherman.MusicSearchFragment"
+        android:label="fragment_music_search"
+        tools:layout="@layout/fragment_music_search" />
 </navigation>

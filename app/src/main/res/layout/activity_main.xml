@@ -27,9 +27,14 @@
             style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:itemIconSize="25dp"
-            android:layout_weight="1"
+            android:layout_weight="0.7"
+            android:background="#304FFE"
+            android:minWidth="80dp"
+            android:textAlignment="center"
             app:itemHorizontalTranslationEnabled="true"
+            app:itemIconSize="24dp"
+            app:itemTextColor="@color/nav_color"
+            app:itemIconTint="@color/nav_color"
             app:menu="@menu/bottom_navigation_menu" />
     </LinearLayout>
 
