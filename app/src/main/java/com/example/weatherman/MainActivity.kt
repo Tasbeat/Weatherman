@@ -21,6 +21,8 @@ import java.text.SimpleDateFormat
 import java.util.*
 import androidx.annotation.NonNull
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
+import androidx.navigation.ui.setupWithNavController
 
 
 class MainActivity : AppCompatActivity() {
@@ -33,10 +35,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(LayoutInflater.from(this))
         setContentView(binding.root)
-        var badge = binding.bottomNavigation.getOrCreateBadge(R.id.page1)
+        /*var badge = binding.bottomNavigation.getOrCreateBadge(R.id.w)
         badge.isVisible = true
-        badge.number = 99
+        badge.number = 99*/
 
+
+        val navController = findNavController(R.id.nav_host_fragment)
+        binding.bottomNavigation.setupWithNavController(navController)
+
+/*
         binding.bottomNavigation.setOnNavigationItemReselectedListener { item ->
             when (item.itemId) {
                 R.id.page1 -> {
@@ -60,7 +67,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 else -> false
             }
-        })
+        })*/
 
     }
 }
